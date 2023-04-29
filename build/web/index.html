@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biblioteca UTL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alda">
+        <meta name="date" content="27/04/2023">
+        <link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="style/js/gft/gft.css"/>
+        <link rel="stylesheet" type="text/css" href="style/css/estilos.css"/>
+        <link rel="icon" type="image/x-icon" href="resources/logoUTLicono.png"/>
+    </head>
+    <body>
+        <div class="login">
+            <h1 class="text-center">Registrar Ejemplar</h1>
+            <form class="needs-validation row">
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtNombreAutor">Nombre del Autor</label>
+                    <input class="form-control" type="text" id="txtNombreAutor" required>
+                    <div class="invalid-feedback">
+                        Ingresa el nombre del Autor
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtNombreEditorial">Nombre de la Editorial</label>
+                    <input class="form-control" type="text" id="txtNombreEditorial" required>
+                    <div class="invalid-feedback">
+                        Ingresa el nombre del la Editorial
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtGenero">Genero</label>
+                    <input class="form-control" type="text" id="txtGenero" required>
+                    <div class="invalid-feedback">
+                        Ingresa el Genero
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtIdLibro">ID del Libro</label>
+                    <input class="form-control" type="number" id="txtIdLibro" required>
+                    <div class="invalid-feedback">
+                        Ingresa el ID del Libro
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtTituloLibro">Titulo del Libro</label>
+                    <input class="form-control" type="text" id="txtTituloLibro" required>
+                    <div class="invalid-feedback">
+                        Ingresa el titulo del Libro
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtISBN">ISBN</label>
+                    <input class="form-control" type="number" id="txtISBN" required>
+                    <div class="invalid-feedback">
+                        Ingresa el ISBN del Libro
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtCodigoEjemplar">Codigo del Ejemplar </label>
+                    <input class="form-control" type="text" id="txtCodigoEjemplar" required>
+                    <div class="invalid-feedback">
+                        Ingresa el Codigo del Ejemplar
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtEstatusEjemplar">Estatus del Ejemplar </label>
+                    <input class="form-control" type="number" id="txtEstatusEjemplar" required>
+                    <div class="invalid-feedback">
+                        Ingresa el Estatus del Ejemplar
+                    </div>
+                </div>
+                <div class="form-group was-validated col-lg-4">
+                    <label class="form-label" for="txtObervacionesEjemplar">Obervaciones del Ejemplar </label>
+                    <input class="form-control" type="text" id="txtObervacionesEjemplar" required>
+                    <div class="invalid-feedback">
+                        Ingresa las observaciones del Ejemplar
+                    </div>
+                </div>
+                <div class="col-lg-12 justify-content-center align-content-center d-flex">
+                    <button class="btn btn-success" onclick="insertarEjemplar();">Guardar Ejemplar</button>
+                </div>
+            </form>
+        </div>
+        <script src="style/js/bootstrap.bundle.js"></script>
+        <script src="js/ControllerEjemplar.js"></script>
+    </body>
+</html>
